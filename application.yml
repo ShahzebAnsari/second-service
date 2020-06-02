@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: second-service-greeting
+          uri: https://localhost:8082/
+          predicates:
+            - Path= /secondService/greeting
+            - Query= name, [a-zA-Z]+
+            - Method= GET
+          filters:
+            - AddRequestHeader= request_header1, header_value1
+            - AddRequestParameter= name1, abc
+        - id: second-service-params
+          uri: https://localhost:8082/
+          predicates:
+            - Path= /secondService/parameters
+            - Query= key1, [a-zA-Z0-9]+
+            - Method= GET
+          filters:
+            - AddRequestHeader= request_header1, header_value1
+            - AddRequestParameter= param1, value1
