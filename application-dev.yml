@@ -21,5 +21,6 @@ spring:
             - AddRequestHeader= request_header1, header_value1
             - AddRequestParameter= param1, value1
 
-db:
-  name: inside-second-service
+
+firstservice:
+  message: /firstService/classRoute
