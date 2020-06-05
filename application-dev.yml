@@ -22,5 +22,5 @@ spring:
             - AddRequestParameter= param1, value1
 
 
-firstservice:
-  message: /firstService/classRoute
+secondservice:
+  message: /secondService/classRoute
