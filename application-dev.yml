@@ -23,6 +23,6 @@ spring:
 
 
 secondservice:
-  message: /secondService/classRoute
+  message: /secondService/classRou
 db:
   name: Dynamic name
