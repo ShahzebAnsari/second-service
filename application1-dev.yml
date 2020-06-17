@@ -1,0 +1,4 @@
+firstservice:
+  message: new message
+db:
+  name: Dynamic name
