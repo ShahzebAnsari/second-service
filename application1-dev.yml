@@ -25,4 +25,4 @@ spring:
 secondservice:
   message: /secondService/classRoute
 db:
-  name: Update Dynamic name
+  name: Update1 Dynamic name
